@@ -1,5 +1,7 @@
 package priv.ljh.single;
 
+import java.lang.annotation.Annotation;
+
 /**
  * @Author lijinghai
  * @ClassName:LazyMan
@@ -44,10 +46,14 @@ public class LazyMan {
      * @param args
      */
     public static void main(String[] args) {
-        for (int i = 0; i < 10; i++) {
-            new Thread(() -> {
-                LazyMan.getInstance();
-            }).start();
-        }
+//        for (int i = 0; i < 10; i++) {
+//            new Thread(() -> {
+//                LazyMan.getInstance();
+//            }).start();
+//        }
+
+        LazyMan instance = LazyMan.getInstance();
+        Annotation[] declaredAnnotations = LazyMan.class.getDeclaredAnnotations();
+
     }
 }
