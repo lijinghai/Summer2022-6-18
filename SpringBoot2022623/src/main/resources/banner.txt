@@ -1,0 +1,16 @@
+ ${AnsiColor.BLUE}                   @@@& :@@@
+ ${AnsiColor.BLUE}                @ o@o            :@
+ ${AnsiColor.BLUE}               @              @    @
+ ${AnsiColor.BLUE}              @               &    #
+ ${AnsiColor.BLUE}         .@@            *oo&&8@o:.  &@
+ ${AnsiColor.BLUE}   @ .@                                @
+ ${AnsiColor.BLUE}    @@   @                                :@
+ ${AnsiColor.BLUE}              #@@@@*            &@@@.   @@@@
+ ${AnsiColor.BLUE}                @               @
+ ${AnsiColor.BLUE}               @  #@@  @.   :@*
+ ${AnsiColor.BLUE}           *@           8@:
+ ${AnsiColor.BLUE}       @&                       @@
+ ${AnsiColor.BLUE}     @:                            @ @
+ ${AnsiColor.BLUE}    # @                          **   .@
+ ${AnsiColor.BLUE}   @ #                           @      @
+ ${AnsiColor.BLUE}  &                              @
