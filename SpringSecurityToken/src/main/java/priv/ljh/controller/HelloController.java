@@ -19,6 +19,7 @@ public class HelloController {
     @RequestMapping("/hello")
     @PreAuthorize("@ex.hasAuthority('system:dept:list')")
 //    @PreAuthorize("hasAnyAuthority('admin','test','system:dept:list')")
+//    @PreAuthorize("hasAnyAuthority('system:dept:list')")
 //    @PreAuthorize("hasRole('system:dept:list')")
 //    @PreAuthorize("hasAnyRole('admin','system:dept:list')")
     public String hello(){

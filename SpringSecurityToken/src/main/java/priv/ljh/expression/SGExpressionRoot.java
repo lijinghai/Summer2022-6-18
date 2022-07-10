@@ -7,6 +7,14 @@ import priv.ljh.entity.LoginUser;
 
 import java.util.List;
 
+/**
+ * @Author lijinghai
+ * @ClassName: SGExpressionRoot
+ * @Email: lijinghailjh@163.com
+ * @Description: 自定义权限
+ * @Date: 2022/7/7 16:55
+ * @Version: v1.0
+ */
 @Component("ex")
 public class SGExpressionRoot {
 
