@@ -13,6 +13,13 @@
 
     <dependencies>
 
+        <!--添加spring-cloud-starter-netflix-eureka-client依赖-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+
+
         <!--.maven clean、install cloud-api-commons工程，以供给cloud-consumer-order80与cloud-provider-payment8001两工程调用。-->
         <!-- 引入自己定义的api通用包，可以使用payment支付Entities-->
         <dependency>
