@@ -19,6 +19,14 @@
     </properties>
 
     <dependencies>
+        <!--.maven clean、install cloud-api-commons工程，以供给cloud-consumer-order80与cloud-provider-payment8001两工程调用。-->
+        <!-- 引入自己定义的api通用包，可以使用payment支付Entities-->
+        <dependency>
+            <groupId>priv.ljh</groupId>
+            <artifactId>cloud-api-commons</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
