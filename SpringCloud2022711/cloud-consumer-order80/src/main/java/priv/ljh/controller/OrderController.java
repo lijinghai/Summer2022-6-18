@@ -1,6 +1,8 @@
 package priv.ljh.controller;
 
+import com.netflix.discovery.DiscoveryClient;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -30,6 +32,12 @@ public class OrderController {
      */
     @Resource
     private RestTemplate restTemplate;
+
+//    @Resource
+//    private LoadBalanced loadBalanced;
+//
+//    @Resource
+//    private DiscoveryClient discoveryClient;
 
     /**
      * 新增
