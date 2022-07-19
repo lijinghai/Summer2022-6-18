@@ -20,6 +20,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="cloud-provider-hygtrix-payment8001" target="1.8" />
+      <module name="q" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
