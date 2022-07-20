@@ -6,9 +6,10 @@
         <option name="ideModuleStorage">
           <map>
             <entry key="com.zeroturnaround.jrebel.FormatVersion" value="7.0.0" />
+            <entry key="jrebelEnabled" value="true" />
           </map>
         </option>
-        <option name="version" value="1" />
+        <option name="version" value="2" />
       </configuration>
     </facet>
   </component>
