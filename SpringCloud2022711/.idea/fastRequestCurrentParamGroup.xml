@@ -15,7 +15,7 @@
         </entry>
       </map>
     </option>
-    <option name="tempId" value="id_priv.ljh.controller.PaymentController.paymentInfo_OK" />
+    <option name="tempId" value="" />
     <option name="url" value="/payment/hystrix/ok/1" />
   </component>
 </project>

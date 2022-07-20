@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="fastRequestCurrentProjectConfig">
-    <option name="domain" value="http://localhost:9527" />
-    <option name="enableEnv" value="9527" />
+    <option name="cookieList">
+      <list>
+        <DataMapping>
+          <option name="type" value="http://localhost:9527" />
+          <option name="value" value="BAIDUID=8BB6C8CAA92F04668435D2D24AD1338C:FG" />
+        </DataMapping>
+      </list>
+    </option>
+    <option name="domain" value="http://localhost:8001" />
+    <option name="enableEnv" value="8001" />
     <option name="enableProject" value="Cloud2022711" />
   </component>
 </project>

@@ -12,8 +12,8 @@
                     <option name="childList">
                       <list>
                         <CollectionDetail>
-                          <option name="domain" value="http://localhost:8001" />
-                          <option name="enableEnv" value="8001" />
+                          <option name="domain" value="http://localhost:9527" />
+                          <option name="enableEnv" value="9527" />
                           <option name="enableProject" value="Cloud2022711" />
                           <option name="id" value="id_priv.ljh.controller.PaymentController.paymentInfo_OK" />
                           <option name="name" value="New Request" />
@@ -25,7 +25,7 @@
                               <option name="multipartKeyValueListJson" value="[]" />
                               <option name="originUrl" value="/payment/hystrix/ok/{id}" />
                               <option name="pathParamsKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;id&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;1&quot;}]" />
-                              <option name="url" value="/payment/hystrix/ok/1" />
+                              <option name="url" value="/payment/get/1" />
                               <option name="urlEncodedKeyValueListJson" value="[]" />
                               <option name="urlParamsKeyValueListJson" value="[]" />
                             </ParamGroupCollection>
