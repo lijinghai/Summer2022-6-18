@@ -19,14 +19,5 @@
         <module name="cloud-consumer-feign-order80" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="cloud-provider-hygtrix-payment8001" target="1.8" />
-      <module name="q" target="1.8" />
-    </bytecodeTargetLevel>
-  </component>
-  <component name="JavacSettings">
-    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="cloud-provider-hygtrix-payment8001" options="" />
-    </option>
   </component>
 </project>
