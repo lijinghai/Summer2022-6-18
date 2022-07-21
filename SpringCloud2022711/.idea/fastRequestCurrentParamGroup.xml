@@ -5,7 +5,6 @@
     <option name="method" value="paymentInfo_OK" />
     <option name="methodDescription" value="New Request" />
     <option name="module" value="cloud-provider-hygtrix-mypayment8001" />
-    <option name="originUrl" value="/payment/hystrix/ok/{id}" />
     <option name="pathParamMap">
       <map>
         <entry key="id">
