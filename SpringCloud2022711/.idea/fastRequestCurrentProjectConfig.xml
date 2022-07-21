@@ -9,8 +9,8 @@
         </DataMapping>
       </list>
     </option>
-    <option name="domain" value="http://localhost:9001" />
-    <option name="enableEnv" value="9001" />
+    <option name="domain" value="http://localhost:83" />
+    <option name="enableEnv" value="83" />
     <option name="enableProject" value="Cloud2022711" />
   </component>
 </project>

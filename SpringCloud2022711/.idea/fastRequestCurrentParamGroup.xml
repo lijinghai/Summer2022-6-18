@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="fastRequestCurrentParamGroup">
-    <option name="className" value="priv.ljh.Controller.PaymentController" />
-    <option name="method" value="getPayment" />
-    <option name="module" value="cloudalibaba-provider-payment9002" />
-    <option name="originUrl" value="/payment/nacos/{id}" />
+    <option name="className" value="priv.ljh.controller.OrderNacosController" />
+    <option name="method" value="paymentInfo" />
+    <option name="module" value="cloudalibaba-consumer-nacos-order83" />
     <option name="pathParamMap">
       <map>
         <entry key="id">
@@ -15,6 +14,6 @@
       </map>
     </option>
     <option name="tempId" value="" />
-    <option name="url" value="/payment/nacos/1" />
+    <option name="url" value="/consumer/payment/nacos/1" />
   </component>
 </project>

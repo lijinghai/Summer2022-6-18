@@ -4,6 +4,54 @@
     <option name="historyList">
       <list>
         <ResponseHistory>
+          <option name="className" value="priv.ljh.controller.OrderNacosController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="83" />
+          <option name="enableProject" value="Cloud2022711" />
+          <option name="method" value="paymentInfo" />
+          <option name="methodType" value="GET" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="priv.ljh.controller.OrderNacosController" />
+              <option name="method" value="paymentInfo" />
+              <option name="methodDescription" value="New Request" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/consumer/payment/nacos/{id}" />
+              <option name="pathParamsKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;id&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;1&quot;}]" />
+              <option name="url" value="/consumer/payment/nacos/1" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:83/consumer/payment/nacos/1&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="nacos registry, serverPort: 9002&#9; id1" />
+          <option name="url" value="/consumer/payment/nacos/1" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="priv.ljh.controller.OrderNacosController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="83" />
+          <option name="enableProject" value="Cloud2022711" />
+          <option name="method" value="paymentInfo" />
+          <option name="methodType" value="GET" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="priv.ljh.controller.OrderNacosController" />
+              <option name="method" value="paymentInfo" />
+              <option name="methodDescription" value="New Request" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/consumer/payment/nacos/{id}" />
+              <option name="pathParamsKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;id&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;1&quot;}]" />
+              <option name="url" value="/consumer/payment/nacos/1" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:83/consumer/payment/nacos/1&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="nacos registry, serverPort: 9002&#9; id1" />
+          <option name="url" value="/consumer/payment/nacos/1" />
+        </ResponseHistory>
+        <ResponseHistory>
           <option name="className" value="priv.ljh.Controller.PaymentController" />
           <option name="code" value="200" />
           <option name="enableEnv" value="9001" />
@@ -397,56 +445,6 @@
           <option name="requestInfo" value="Request Url: http://localhost:9527/guonei&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
           <option name="response" value="{&quot;timestamp&quot;:&quot;2022-07-20T07:38:34.447+00:00&quot;,&quot;path&quot;:&quot;/guonei&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;message&quot;:null,&quot;requestId&quot;:&quot;59bda017-9&quot;,&quot;trace&quot;:&quot;org.springframework.web.server.ResponseStatusException: 404 NOT_FOUND\r\n\tat org.springframework.web.reactive.resource.ResourceWebHandler.lambda$handle$1(ResourceWebHandler.java:408)\r\n\tSuppressed: The stacktrace has been enhanced by Reactor, refer to additional information below: \r\nError has been observed at the following site(s):\r\n\t*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ HTTP GET \&quot;/guonei\&quot; [ExceptionHandlingWebHandler]\r\nOriginal Stack Trace:\r\n\t\tat org.springframework.web.reactive.resource.ResourceWebHandler.lambda$handle$1(ResourceWebHandler.java:408)\r\n\t\tat reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:44)\r\n\t\tat reactor.core.publisher.Mono.subscribe(Mono.java:4400)\r\n\t\tat reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onComplete(FluxSwitchIfEmpty.java:82)\r\n\t\tat reactor.core.publisher.MonoFlatMap$FlatMapMain.onComplete(MonoFlatMap.java:181)\r\n\t\tat reactor.core.publisher.MonoNext$NextSubscriber.onComplete(MonoNext.java:102)\r\n\t\tat reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.drain(FluxConcatMap.java:368)\r\n\t\tat reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.onSubscribe(FluxConcatMap.java:219)\r\n\t\tat reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:165)\r\n\t\tat reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:87)\r\n\t\tat reactor.core.publisher.Mono.subscribe(Mono.java:4400)\r\n\t\tat reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:263)\r\n\t\tat reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:51)\r\n\t\tat reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:157)\r\n\t\tat reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)\r\n\t\tat reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82)\r\n\t\tat reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.innerNext(FluxConcatMap.java:282)\r\n\t\tat reactor.core.publisher.FluxConcatMap$ConcatMapInner.onNext(FluxConcatMap.java:863)\r\n\t\tat reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)\r\n\t\tat reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2398)\r\n\t\tat reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.request(FluxMapFuseable.java:171)\r\n\t\tat reactor.core.publisher.Operators$MultiSubscriptionSubscriber.set(Operators.java:2194)\r\n\t\tat reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onSubscribe(Operators.java:2068)\r\n\t\tat reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onSubscribe(FluxMapFuseable.java:96)\r\n\t\tat reactor.core.publisher.MonoJust.subscribe(MonoJust.java:55)\r\n\t\tat reactor.core.publisher.Mono.subscribe(Mono.java:4400)\r\n\t\tat reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.drain(FluxConcatMap.java:451)\r\n\t\tat reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.onSubscribe(FluxConcatMap.java:219)\r\n\t\tat reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:165)\r\n\t\tat reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:87)\r\n\t\tat reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)\r\n\t\tat reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)\r\n\t\tat reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)\r\n\t\tat reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)\r\n\t\tat reactor.core.publisher.Mono.subscribe(Mono.java:4400)\r\n\t\tat reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:263)\r\n\t\tat reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:51)\r\n\t\tat reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)\r\n\t\tat reactor.core.publisher.MonoDeferContextual.subscribe(MonoDeferContextual.java:55)\r\n\t\tat reactor.netty.http.server.HttpServer$HttpServerHandle.onStateChange(HttpServer.java:967)\r\n\t\tat reactor.netty.ReactorNetty$CompositeConnectionObserver.onStateChange(ReactorNetty.java:677)\r\n\t\tat reactor.netty.transport.ServerTransport$ChildObserver.onStateChange(ServerTransport.java:478)\r\n\t\tat reactor.netty.http.server.HttpServerOperations.onInboundNext(HttpServerOperations.java:570)\r\n\t\tat reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:93)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)\r\n\t\tat reactor.netty.http.server.HttpTrafficHandler.channelRead(HttpTrafficHandler.java:222)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)\r\n\t\tat io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)\r\n\t\tat io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:327)\r\n\t\tat io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:299)\r\n\t\tat io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)\r\n\t\tat io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)\r\n\t\tat io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)\r\n\t\tat io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)\r\n\t\tat io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)\r\n\t\tat io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)\r\n\t\tat io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)\r\n\t\tat io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)\r\n\t\tat io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:995)\r\n\t\tat io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)\r\n\t\tat io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)\r\n\t\tat java.lang.Thread.run(Thread.java:748)\r\n&quot;}" />
           <option name="url" value="/guonei" />
-        </ResponseHistory>
-        <ResponseHistory>
-          <option name="className" value="priv.ljh.controller.PaymentController" />
-          <option name="code" value="200" />
-          <option name="enableEnv" value="9527" />
-          <option name="enableProject" value="Cloud2022711" />
-          <option name="method" value="paymentInfo_OK" />
-          <option name="methodType" value="GET" />
-          <option name="name" value="New Request" />
-          <option name="paramGroup">
-            <ParamGroupCollection>
-              <option name="className" value="priv.ljh.controller.PaymentController" />
-              <option name="method" value="paymentInfo_OK" />
-              <option name="methodDescription" value="New Request" />
-              <option name="multipartKeyValueListJson" value="[]" />
-              <option name="originUrl" value="/payment/hystrix/ok/{id}" />
-              <option name="pathParamsKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;id&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;1&quot;}]" />
-              <option name="url" value="/payment/get/1" />
-              <option name="urlEncodedKeyValueListJson" value="[]" />
-              <option name="urlParamsKeyValueListJson" value="[]" />
-            </ParamGroupCollection>
-          </option>
-          <option name="requestInfo" value="Request Url: http://localhost:9527/payment/get/1&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
-          <option name="response" value="{&quot;code&quot;:200,&quot;message&quot;:&quot;查询成功,serverPort: 8001&quot;,&quot;data&quot;:{&quot;id&quot;:1,&quot;serial&quot;:&quot;夏天&quot;}}" />
-          <option name="url" value="/payment/get/1" />
-        </ResponseHistory>
-        <ResponseHistory>
-          <option name="className" value="priv.ljh.controller.PaymentController" />
-          <option name="code" value="200" />
-          <option name="enableEnv" value="9527" />
-          <option name="enableProject" value="Cloud2022711" />
-          <option name="method" value="paymentInfo_OK" />
-          <option name="methodType" value="GET" />
-          <option name="name" value="New Request" />
-          <option name="paramGroup">
-            <ParamGroupCollection>
-              <option name="className" value="priv.ljh.controller.PaymentController" />
-              <option name="method" value="paymentInfo_OK" />
-              <option name="methodDescription" value="New Request" />
-              <option name="multipartKeyValueListJson" value="[]" />
-              <option name="originUrl" value="/payment/hystrix/ok/{id}" />
-              <option name="pathParamsKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;id&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;1&quot;}]" />
-              <option name="url" value="/payment/get/1" />
-              <option name="urlEncodedKeyValueListJson" value="[]" />
-              <option name="urlParamsKeyValueListJson" value="[]" />
-            </ParamGroupCollection>
-          </option>
-          <option name="requestInfo" value="Request Url: http://localhost:9527/payment/get/1&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
-          <option name="response" value="{&quot;code&quot;:200,&quot;message&quot;:&quot;查询成功,serverPort: 8001&quot;,&quot;data&quot;:{&quot;id&quot;:1,&quot;serial&quot;:&quot;夏天&quot;}}" />
-          <option name="url" value="/payment/get/1" />
         </ResponseHistory>
         <ResponseHistory>
           <option name="className" value="priv.ljh.controller.PaymentController" />
