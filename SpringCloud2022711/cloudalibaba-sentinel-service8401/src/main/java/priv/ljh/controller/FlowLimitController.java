@@ -35,5 +35,19 @@ public class FlowLimitController {
         log.info(Thread.currentThread().getName()+"\t"+"...testB");
         return "------testB";
     }
+
+    @GetMapping("/testD")
+    public String testD() {
+//        try {
+//            TimeUnit.SECONDS.sleep(1);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+//        log.info("testD 测试RT");
+        log.info("testD  异常测试");
+        int a = 10/0;
+        return "----testD";
+    }
+
 }
 
