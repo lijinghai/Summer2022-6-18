@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="fastRequestCurrentParamGroup">
-    <option name="className" value="priv.ljh.controller.OrderNacosController" />
-    <option name="method" value="paymentInfo" />
-    <option name="module" value="cloudalibaba-consumer-nacos-order83" />
-    <option name="pathParamMap">
-      <map>
-        <entry key="id">
-          <value>
-            <Object />
-          </value>
-        </entry>
-      </map>
-    </option>
+    <option name="className" value="priv.ljh.controller.FlowLimitController" />
+    <option name="method" value="testA" />
+    <option name="module" value="cloudalibaba-sentinel-service8401" />
+    <option name="originUrl" value="/testA" />
     <option name="tempId" value="" />
-    <option name="url" value="/consumer/payment/nacos/1" />
+    <option name="url" value="/testA" />
   </component>
 </project>
