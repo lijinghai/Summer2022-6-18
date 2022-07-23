@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="fastRequestCurrentParamGroup">
-    <option name="className" value="priv.ljh.controller.CircleBreakerController" />
-    <option name="method" value="fallback" />
-    <option name="module" value="cloudalibaba-consumer-nacos-order84" />
-    <option name="originUrl" value="/consumer/fallback/{id}" />
-    <option name="pathParamMap">
-      <map>
-        <entry key="id">
-          <value>
-            <Object />
-          </value>
-        </entry>
-      </map>
-    </option>
+    <option name="className" value="priv.ljh.controller.RateLimitController" />
+    <option name="method" value="byUrl" />
+    <option name="module" value="cloudalibaba-sentinel-service8401" />
+    <option name="originUrl" value="/rateLimit/byUrl" />
     <option name="tempId" value="" />
-    <option name="url" value="/consumer/fallback/1" />
+    <option name="url" value="/rateLimit/byUrl" />
   </component>
 </project>

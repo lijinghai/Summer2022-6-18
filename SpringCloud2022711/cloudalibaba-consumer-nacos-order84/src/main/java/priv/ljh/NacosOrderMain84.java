@@ -13,9 +13,9 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  * @Date: 2022/7/23 12:23
  * @Version: v1.0
  */
-@SpringBootApplication
 @EnableDiscoveryClient
-@EnableFeignClients
+@SpringBootApplication
+@EnableFeignClients//<------------------------
 public class NacosOrderMain84 {
     public static void main(String[] args) {
         SpringApplication.run(NacosOrderMain84.class,args);
