@@ -1,25 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="fastRequestCurrentParamGroup">
-    <option name="className" value="priv.ljh.controller.FlowLimitController" />
-    <option name="method" value="testHotKey" />
+    <option name="className" value="priv.ljh.controller.RateLimitController" />
+    <option name="method" value="customerBlockHandler" />
     <option name="module" value="cloudalibaba-sentinel-service8401" />
-    <option name="originUrl" value="/testHotKey" />
-    <option name="requestParamMap">
-      <map>
-        <entry key="p1">
-          <value>
-            <Object />
-          </value>
-        </entry>
-        <entry key="p2">
-          <value>
-            <Object />
-          </value>
-        </entry>
-      </map>
-    </option>
+    <option name="originUrl" value="/rateLimit/customerBlockHandler" />
     <option name="tempId" value="" />
-    <option name="url" value="/testHotKey" />
+    <option name="url" value="/rateLimit/customerBlockHandler" />
   </component>
 </project>
