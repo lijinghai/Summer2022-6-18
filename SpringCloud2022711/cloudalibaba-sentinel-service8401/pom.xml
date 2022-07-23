@@ -17,7 +17,7 @@
     </properties>
 
     <dependencies>
-        <!--SpringCloud ailibaba sentinel-datasource-nacos 后续做持久化用到-->
+        <!--SpringCloud ailibaba sentinel-datasource-nacos 后续做持久化用到 -->
         <dependency>
             <groupId>com.alibaba.csp</groupId>
             <artifactId>sentinel-datasource-nacos</artifactId>
