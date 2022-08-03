@@ -11,10 +11,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import priv.ljh.mall.member.entity.MemberEntity;
+import priv.ljh.mall.member.feign.CouponFeignService;
 import priv.ljh.mall.member.service.MemberService;
 import priv.ljh.common.utils.PageUtils;
 import priv.ljh.common.utils.R;
 
+import javax.annotation.Resource;
 
 
 /**
@@ -29,6 +31,17 @@ import priv.ljh.common.utils.R;
 public class MemberController {
     @Autowired
     private MemberService memberService;
+
+    @Autowired
+    private CouponFeignService couponFeignService;
+    @RequestMapping("/coupons")
+    public R test(){
+        MemberEntity memberEntity = new MemberEntity();
+        memberEntity.setNickname("张三");
+        R membercoupons = couponFeignService.membercoupons();
+
+        return R.ok().put("member",memberEntity).put("coupons",membercoupons.get("coupons"));
+    }
 
     /**
      * 列表
