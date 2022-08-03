@@ -3,6 +3,8 @@ server:
 
 
 spring:
+  application:
+    name: mall-coupon
   datasource:
     username: root
     password: root
@@ -12,8 +14,10 @@ spring:
     nacos:
       discovery:
         server-addr: 124.221.77.176:1111
-  application:
-    name: mall-coupon
+      config:
+        server-addr: 124.221.77.176:1111 #Nacos作为配置中心地址
+        file-extension: properties #指定yaml格式的配置
+        group: DEV_GROUP    # 设置GROUP组
 
 
 mybatis-plus:
