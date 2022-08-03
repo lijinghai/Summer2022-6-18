@@ -1,30 +1,24 @@
-server:
-  port: 7000
+#server:
+#  port: 7000
 
 
-spring:
-  application:
-    name: mall-coupon
-  datasource:
-    username: root
-    password: root
-    url: jdbc:mysql://124.221.77.176:3307/gulimall_sms?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
-    driver-class-name: com.mysql.cj.jdbc.Driver
-  cloud:
-    nacos:
-      discovery:
-        server-addr: 124.221.77.176:1111
-      config:
-        server-addr: 124.221.77.176:1111 #Nacos作为配置中心地址
-        file-extension: properties #指定yaml格式的配置
-        group: DEV_GROUP    # 设置GROUP组
+#spring:
+#  application:
+#    name: mall-coupon
+#  datasource:
+#    username: root
+#    password: root
+#    url: jdbc:mysql://124.221.77.176:3307/gulimall_sms?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+#    driver-class-name: com.mysql.cj.jdbc.Driver
 
 
-mybatis-plus:
-  mapper-locations: classpath:/mapper/**/*.xml
-  global-config:
-    db-config:
-      id-type: auto   # 主键自增
+
+
+#mybatis-plus:
+#  mapper-locations: classpath:/mapper/**/*.xml
+#  global-config:
+#    db-config:
+#      id-type: auto   # 主键自增
 
 
 

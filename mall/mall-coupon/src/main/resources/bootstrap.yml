@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: mall-coupon
+  cloud:
+    nacos:
+#      discovery:
+#        server-addr: 124.221.77.176:1111 #Nacos\u670D\u52A1\u6CE8\u518C\u4E2D\u5FC3\u5730\u5740
+      config:
+        server-addr: 124.221.77.176:1111 #Nacos\u4F5C\u4E3A\u914D\u7F6E\u4E2D\u5FC3\u5730\u5740
+        file-extension: yaml #\u6307\u5B9Ayaml\u683C\u5F0F\u7684\u914D\u7F6E
+        group: DEFAULT_GROUP    # \u8BBE\u7F6EGROUP\u7EC4
+        namespace: c4d8cb08-fcd1-49eb-9d88-43472a0519b6   # \u547D\u540D\u7A7A\u95F4\
+        ext-config[0].data-id: datasource.yaml
+        ext-config[0].group: DEFAULT_GROUP
+        ext-config[0].refresh: true
+
+        ext-config[1].data-id: mybatis.yaml
+        ext-config[1].group: DEFAULT_GROUP
+        ext-config[1].refresh: true
+
+        ext-config[2].data-id: other.yaml
+        ext-config[2].group: DEFAULT_GROUP
+        ext-config[2].refresh: true
+
+        ext-config[3].data-id: mall-coupon.yaml
+        ext-config[3].group: DEFAULT_GROUP
+        ext-config[3].refresh: true
+
+
+
+
+# ${spring.application.name}-${spring.profile.active}.${spring.cloud.nacos.config.file-extension}
+# nacos-config-client-dev.yaml
+
+# nacos-config-client-test.yaml   ----> config.info
+
+
+
+
