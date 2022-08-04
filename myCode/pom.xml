@@ -11,7 +11,7 @@
 
     <modules>
         <module>mall-common</module>
-        <module>renren-generator</module>
+        <module>lijinghai-generator</module>
         <module>mall-product</module>
     </modules>
 

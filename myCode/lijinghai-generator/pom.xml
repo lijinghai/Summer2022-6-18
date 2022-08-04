@@ -3,10 +3,10 @@
 		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>io.renren</groupId>
-	<artifactId>renren-generator</artifactId>
+	<artifactId>lijinghai-generator</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
-	<description>renren-generator</description>
+	<description>lijinghai-generator</description>
 	<!--		<version>2.2.6.RELEASE</version>-->
 
 
