@@ -5,11 +5,13 @@ server:
 
 # mysql
 spring:
+  main:
+    allow-circular-references: true
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     #MySQL配置
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://124.221.77.176:3307/gulimall_wms?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://124.221.77.176:3307/gulimall_pms?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
     username: root
     password: root
     #oracle配置
@@ -34,8 +36,9 @@ spring:
   jackson:
     time-zone: GMT+8
     date-format: yyyy-MM-dd HH:mm:ss
-  resources:
-    static-locations: classpath:/static/,classpath:/views/
+  web:
+    resources:
+      static-locations: classpath:/static/,classpath:/views/
 
 #mongodb:
 #  host: localhost
