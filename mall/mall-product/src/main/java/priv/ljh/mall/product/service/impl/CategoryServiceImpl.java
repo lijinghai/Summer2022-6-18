@@ -66,7 +66,6 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity
         }).map(categoryEntity -> {
             // 1. 找到子菜单
             categoryEntity.setChildren(getChildrens(categoryEntity, categoryEntities));
-
             return categoryEntity;
         }).sorted((menu1, menu2) -> {
             // 2.菜单的排序
