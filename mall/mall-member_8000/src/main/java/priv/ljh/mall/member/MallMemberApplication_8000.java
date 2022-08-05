@@ -8,10 +8,10 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableFeignClients(basePackages = "priv.ljh.mall.member.feign")
-public class MallMemberApplication {
+public class MallMemberApplication_8000 {
 
     public static void main(String[] args) {
-        SpringApplication.run(MallMemberApplication.class, args);
+        SpringApplication.run(MallMemberApplication_8000.class, args);
     }
 
 }

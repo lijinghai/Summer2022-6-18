@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: mall-product
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 124.221.77.176:1111
+        namespace: b76bbfaa-06c3-4821-a4bb-5639075ae94c
