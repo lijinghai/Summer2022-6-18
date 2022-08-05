@@ -11,15 +11,15 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>mall-coupon</module>
-        <module>mall-member</module>
-        <module>mall-order</module>
-        <module>mall-product</module>
-        <module>mall-ware</module>
-        <module>renren-fast</module>
-        <module>lijinghai-generator</module>
+        <module>mall-coupon_7000</module>
+        <module>mall-member_8000</module>
+        <module>mall-order_9000</module>
+        <module>mall-product_10000</module>
+        <module>mall-ware_11000</module>
+        <module>renren-fast_8080</module>
+        <module>lijinghai-generator_80</module>
         <module>mall-common</module>
-        <module>mall-getway</module>
+        <module>mall-getway_88</module>
     </modules>
 
 
