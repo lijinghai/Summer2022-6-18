@@ -27,8 +27,16 @@ spring:
         #          uri: https://www.qq.com
         #          predicates:
         #            - Query=url,qq
+
+        - id: admin_route
+          uri: lb://renren-fast
+          predicates:
+            - Path=/api/**
+          filters:
+            - RewritePath=/api/(?<segment>.*),/renren-fast/$\{segment}
+
         - id: product_route
-          uri: lb://gulimall-product
+          uri: lb://mall-product
           predicates:
             - Path=/api/product/**
           filters:
@@ -62,15 +70,10 @@ spring:
           filters:
             - RewritePath=/api/thirdpart/(?<segment>.*),/$\{segment}
 
-        - id: admin_route
-          uri: lb://renren-fast
-          predicates:
-            - Path=/api/**
-          filters:
-            - RewritePath=/api/(?<segment>.*),/renren-fast/$\{segment}
+
 
         - id: gulimall_product_route
-          uri: lb://gulimall-product
+          uri: lb://mall-product
           predicates:
             - Host=gulimall.com,item.gulimall.com
 
