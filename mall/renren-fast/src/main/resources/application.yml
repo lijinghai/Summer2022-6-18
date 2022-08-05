@@ -45,6 +45,8 @@ spring:
     nacos:
       discovery:
         server-addr: 124.221.77.176:1111
+      config:
+        server-addr: 124.221.77.176:1111 #Nacos作为配置中心地址
 #  resources:
 #    add-mappings: false
 

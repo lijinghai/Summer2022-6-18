@@ -6,10 +6,10 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-public class MallGetwayApplication {
+public class MallGetwayApplication_88 {
 
     public static void main(String[] args) {
-        SpringApplication.run(MallGetwayApplication.class, args);
+        SpringApplication.run(MallGetwayApplication_88.class, args);
     }
 
 }

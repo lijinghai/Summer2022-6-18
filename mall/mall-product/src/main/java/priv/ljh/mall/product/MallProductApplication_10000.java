@@ -9,10 +9,10 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 @SpringBootApplication
 @EnableDiscoveryClient
 //@SpringBootApplication(exclude = {ShiroAnnotationProcessorAutoConfiguration.class, ShiroAutoConfiguration.class, ShiroBeanAutoConfiguration.class})
-public class MallProductApplication {
+public class MallProductApplication_10000 {
 
     public static void main(String[] args) {
-        SpringApplication.run(MallProductApplication.class, args);
+        SpringApplication.run(MallProductApplication_10000.class, args);
     }
 
 }
