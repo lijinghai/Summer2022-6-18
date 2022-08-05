@@ -7,7 +7,7 @@ import org.springframework.web.cors.reactive.CorsWebFilter;
 import org.springframework.web.cors.reactive.UrlBasedCorsConfigurationSource;
 
 @Configuration
-public class GulimallCorsConfiguration {
+public class MallCorsConfiguration {
 
     /**
      * 跨域解决办法之一：
@@ -21,7 +21,8 @@ public class GulimallCorsConfiguration {
         // 1、配置跨域
         corsConfiguration.addAllowedHeader("*");
         corsConfiguration.addAllowedMethod("*");
-        corsConfiguration.addAllowedOrigin("*");
+//        corsConfiguration.addAllowedOrigin("*");
+        corsConfiguration.addAllowedOriginPattern("*");
         corsConfiguration.setAllowCredentials(true);// 否则跨域请求会丢失cookie信息
 
         source.registerCorsConfiguration("/**", corsConfiguration);
