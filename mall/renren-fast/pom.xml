@@ -52,6 +52,7 @@
 
 	<dependencies>
 
+
 		<!--服务注册和发现-->
 		<dependency>
 			<groupId>com.alibaba.cloud</groupId>
