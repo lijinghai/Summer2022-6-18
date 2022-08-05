@@ -6,7 +6,7 @@
  * @Version: v1.0
 -->
 <template>
-  <el-tree :data="menus" :props="defaultProps" :expand-on-click-node="false" show-checkbox node-key="catId">
+  <el-tree :data="menus" :props="defaultProps" :expand-on-click-node="false" show-checkbox node-key="catId" :default-expanded-keys="expandedke">
     <span class="custom-tree-node" slot-scope="{ node, data }">
         <span>{{ node.label }}</span>
         <span>
@@ -44,6 +44,7 @@ export default {
   // 这里存放数据
   data () {
     return {
+      expandedke: [],
       menus: [],
       defaultProps: {
         children: 'children',
@@ -73,7 +74,30 @@ export default {
     },
     // 移除按钮
     remove (node, data) {
-      console.log('remove', node, data)
+      var ids = [data.catId]
+      // 弹窗提示
+      this.$confirm(`是否删除【${data.name}】菜单, 是否继续?`, '提示', {
+        confirmButtonText: '确定',
+        cancelButtonText: '取消',
+        type: 'warning'
+      }).then(() => {
+        this.$http({
+          url: this.$http.adornUrl('/product/category/delete'),
+          method: 'post',
+          data: this.$http.adornData(ids, false)
+        }).then(({data}) => {
+          this.$message({
+            message: '菜单删除成功',
+            type: 'success'
+          })
+          // 更新数据
+          this.getMenus()
+          // 设置需要默认展开的菜单
+          this.expandedke = [node.parent.data.catId]
+        })
+      }).catch(() => {   // 取消
+
+      })
     },
     // 编辑
     edit (data) {
