@@ -8,9 +8,9 @@ spring:
         file-extension: yaml #指定yaml格式的配置
         group: DEFAULT_GROUP    # 设置GROUP组
         namespace: 657a0e6a-4352-49c8-b522-92c97291dba1   # 命名空间
-#        ext-config[0].data-id: datasource.yaml
-#        ext-config[0].group: DEFAULT_GROUP
-#        ext-config[0].refresh: true
+        ext-config[0].data-id: mall-getway.yaml
+        ext-config[0].group: DEFAULT_GROUP
+        ext-config[0].refresh: true
 #
 #        ext-config[1].data-id: mybatis.yaml
 #        ext-config[1].group: DEFAULT_GROUP
