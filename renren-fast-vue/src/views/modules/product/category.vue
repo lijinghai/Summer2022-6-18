@@ -7,7 +7,14 @@
 -->
 <template>
   <div>
-  <el-tree :data="menus" :props="defaultProps" :expand-on-click-node="false" show-checkbox node-key="catId" :default-expanded-keys="expandedkey">
+  <el-tree
+    :data="menus"
+    :props="defaultProps"
+    :expand-on-click-node="false"
+    show-checkbox node-key="catId"
+    :default-expanded-keys="expandedkey"
+    draggable
+    :allow-drop="allowDrop">
     <span class="custom-tree-node" slot-scope="{ node, data }">
         <span>{{ node.label }}</span>
         <span>
@@ -227,6 +234,38 @@ export default {
         // 设置需要默认展开的菜单
         this.expandedkey = [this.category.parentCid]
       })
+    },
+    allowDrop (draggingNode, dropNode, type) {
+      // 1、被拖动的当前节点以及所在的父节点总层数不能大于3
+
+      // 1）、被拖动的当前节点总层数
+      console.log('allowDrop:', draggingNode, dropNode, type)
+      //
+      this.countNodeLevel(draggingNode)
+      // 当前正在拖动的节点+父节点所在的深度不大于3即可
+      let deep = Math.abs(this.maxLevel - draggingNode.level) + 1
+      console.log('深度：', deep)
+
+      //   this.maxLevel
+      if (type === 'inner') {
+        // console.log(
+        //   `this.maxLevel：${this.maxLevel}；draggingNode.data.catLevel：${draggingNode.data.catLevel}；dropNode.level：${dropNode.level}`
+        // );
+        return deep + dropNode.level <= 3
+      } else {
+        return deep + dropNode.parent.level <= 3
+      }
+    },
+    countNodeLevel (node) {
+      // 找到所有子节点，求出最大深度
+      if (node.childNodes != null && node.childNodes.length > 0) {
+        for (let i = 0; i < node.childNodes.length; i++) {
+          if (node.childNodes[i].level > this.maxLevel) {
+            this.maxLevel = node.childNodes[i].level
+          }
+          this.countNodeLevel(node.childNodes[i])
+        }
+      }
     }
   },
 // 生命周期 - 创建完成（可以访问当前this实例）
