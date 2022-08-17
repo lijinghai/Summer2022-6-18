@@ -2,10 +2,10 @@
 <project version="4">
   <component name="fastRequestCurrentParamGroup">
     <option name="className" value="priv.ljh.controller.RateLimitController" />
-    <option name="method" value="byUrl" />
+    <option name="method" value="customerBlockHandler" />
     <option name="module" value="cloudalibaba-sentinel-service8401" />
-    <option name="originUrl" value="/rateLimit/byUrl" />
+    <option name="originUrl" value="/rateLimit/customerBlockHandler" />
     <option name="tempId" value="" />
-    <option name="url" value="/rateLimit/byUrl" />
+    <option name="url" value="/rateLimit/customerBlockHandler" />
   </component>
 </project>
